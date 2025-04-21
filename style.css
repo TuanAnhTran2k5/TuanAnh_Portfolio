@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+body{
+    background: linear-gradient(140deg,rgba(56, 52, 120, 1) 0%, rgba(17, 17, 171, 0.76) 75%, rgb(2, 52, 62) 100%);
+    min-height: 100vh;
+    color: white;
+}
+/* -------------------------------------------header--------------------------------------------- */
+header{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 45px;
+    background: linear-gradient(to right, #9932CC, #FF69B4);
+    background-clip: text;
+    color: transparent;
+    font-weight: 550;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;  
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    border-radius: 50px;
+    padding: 12px 25px;
+    background-color: rgb(32, 112, 224);
+    border: none;
+    outline: none;
+    color: white; 
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+
+.button:hover{
+    color: black;
+    background-color: rgb(79, 233, 8);
+}
+
+.button span{
+    font-weight: 700;  
+}
+
+/* -------------------------------------------Main--------------------------------------------- */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px ;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h1{
+    font-size: 65px;
+}
+
+.content h1 span{
+    background: linear-gradient(to right, #9932CC, #FF69B4);
+    background-clip: text;
+    color: transparent;
+}
+
+.content p:nth-of-type(1){
+    font-size: 30px;
+    color: rgb(200, 182, 226);
+}
+
+.content p:nth-of-type(2){
+    font-size: 20px;
+    color: rgb(169, 169, 169);
+}
+
+.readMore{
+    background-color: transparent;
+    border: 2px rgb(194, 31, 156)  solid;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.start:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(153, 50, 204, 0.6)  
+}
+
+.button_wrapper{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 20px;
+
+}
+
+.readMore::before{
+    content:"";
+    position: absolute;
+    background-color:  rgb(194, 31, 156);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: all 0.3s ;
+    z-index: -1;
+}
+
+.readMore:hover::before{
+    width: 100%;
+}
+
+/* ------------------------------------Home Work--------------------------------------- */
+
+.img_container{
+    position: relative;
+    text-align: center;
+    width: 700px;
+    top: -40px;
+    /* overflow: hidden; */
+}
+
+.img_container img {    
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: top;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.featureBox {
+    background-color: #343451;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48% ;
+    height: 150px;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+
+.featureBox h2 {
+    color: #00a8e1;
+}
+
+.box3{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.featureBox:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(153, 50, 204, 0.6)
+}
+
+
+
+.featureBox i {
+    transition: all 0.5s ease;
+    font-size: 30px;
+}
+
+.featureBox i:hover {
+    transform: rotate(360deg);
+    color: rgb(255, 0, 255);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 120px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.social a {
+    color: white;
+    background-color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid rgb(231, 6, 212);
+    border-radius: 50px;
+    padding: 10px;
+
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+
+.social a:hover {
+    border-color: rgb(9, 5, 5);
+    color: black;
+    background-color: yellow;
+}
+
+
+.fx:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 19, 7, 0.6)
+}
+
+.endOfPage {
+    margin-top: 25px;
+}

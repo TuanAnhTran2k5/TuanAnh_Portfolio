@@ -264,13 +264,43 @@ footer {
 /* ----------------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width:900px){
-   .container header nav, 
+   /* .container header nav,  */
    .container header .button{
     display: none;
    }
 
-   .bar{
+   nav{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(148, 27, 121);
+        padding: 20px;  
+        transition: all 0.4s ease; 
+        z-index: 99;
+
+   }
+
+   nav.active{
+    right: 0;
+   }
+
+   nav ul {
+    /* display: flex; */
+    /* position: relative; */
+    flex-direction: column;
+    gap: 40px;
+   }
+
+   nav ul li a {
+    color: yellow;
+   }
+
+    .bar{
+    position: relative;
     display: block;
+    z-index: 100;
    }
 
    main {

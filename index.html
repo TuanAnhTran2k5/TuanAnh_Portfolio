@@ -21,7 +21,7 @@
     <div class="container">
     <header> 
         <div class="logo"> TUAN ANH</div>
-        <nav>
+        <nav id="mobile-nav">
             <ul>
                 <li>
                     <a href="">Home</a>
@@ -38,18 +38,22 @@
             </ul>
         </nav>
 
-        <div >
-            <button class="button" > <span>Contact Me</span> <i style="color: white;" class="fa-solid fa-handshake"></i> </button>
-        </div>
+        <div>
+            <div >
+                <button class="button" > <span>Contact Me</span> <i style="color: white;" class="fa-solid fa-handshake"></i> </button>
+            </div>
+    
+            <div class="bar" id="menu-toggle">
+                <i class="fa-solid fa-bars" id="bar-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
 
-        <div class="bar">
-            <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="content">
-            <h1>I'm, <span>Tuan Anh</span></h1>
+            <h1 id="title">I'm, <span>Tuan Anh</span></h1>
             <p>Front-End Developer</p>
             <p>I love IT</p>
             <div class="button_wrapper">
@@ -110,5 +114,6 @@
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="./app.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
